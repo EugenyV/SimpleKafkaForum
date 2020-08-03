@@ -44,4 +44,8 @@ public class AuthorizationController {
         DataResult datares = new DataResult(new SessionOut(res.getSessionID()));
         return datares;
     }
+    @GetMapping("/hello")
+    public String hello() {
+        return "Hello world!";
+    }
 }
